@@ -9,15 +9,51 @@
 body {
   height: 100vh;
   display: grid;
-  /* place-items: center; */
-  justify-content: center;
+  place-items: center;
+  /* justify-content: center; */
   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: linear-gradient(to bottom, rgba(200, 14, 144, 0.1)), url('sarah-evans-unsplash.jpg');
+  background-image: linear-gradient(to bottom, rgba(200, 14, 144, 0.1)), url('sarah-evans-unsplash-1.jpg');
   background-size: cover;
   background-position: center;
+  /* background-position: 45% 50%; */
 }
 /* https://images.unsplash.com/photo-1602678460152-719a9af1fb6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
 
+.text {
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 1px solid black;
+  max-width: 35rem;
+}
+
+.text h1 {
+  font-size: 2.7rem;
+  color: rgb(6, 90, 6);
+  text-shadow: 0 -4px 2px rgba(255, 255, 255, 0.7);
+}
+
+.text div {
+  color: antiquewhite;
+}
+
 .date-section {
   display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.date-format {
+  height: 7rem;
+  width: 6rem;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 0.4rem;
+  color: rgb(160, 11, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.date-format h4 {
+  font-size: 2.5rem;
 }
