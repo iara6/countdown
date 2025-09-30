@@ -18,22 +18,33 @@ body {
   /* background-position: 45% 50%; */
 }
 /* https://images.unsplash.com/photo-1602678460152-719a9af1fb6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
+.xmas-image-container {
+  max-width: 25rem;
+  margin: 0 auto 3rem;
+}
+
+.xmas-image {
+  width: 100%;
+}
 
 .text {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
-  border: 1px solid black;
-  max-width: 35rem;
+ /*  max-width: 35rem; */
 }
 
 .text h1 {
-  font-size: 2.7rem;
+  font-size: 3.8rem;
   color: rgb(6, 90, 6);
   text-shadow: 0 -4px 2px rgba(255, 255, 255, 0.7);
 }
 
 .text div {
-  color: antiquewhite;
+  font-size: 1.1rem;
+  font-weight: 350;
+  color: rgb(253, 244, 232);
+  line-height: 2;
+  text-shadow: 1px 1px 0 rgba(87, 86, 78, 0.8);
 }
 
 .date-section {
@@ -43,8 +54,8 @@ body {
 }
 
 .date-format {
-  height: 7rem;
-  width: 6rem;
+  height: 8rem;
+  width: 7rem;
   background-color: rgb(255, 255, 255, 0.7);
   border-radius: 0.4rem;
   color: rgb(160, 11, 11);
@@ -55,5 +66,63 @@ body {
 }
 
 .date-format h4 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width:1580px) {
+  .text h1 {
+  font-size: 3.5rem;
+  }
+
+.text div {
+  font-size: 1rem;
+  }
+   .xmas-image-container {
+  max-width: 18rem;
+  margin: 0 auto 2rem;
+  }
+  .date-format {
+  height: 7rem;
+  width: 6rem;
+  }
+}
+
+@media screen and (max-width:1420px) {
+  .text h1 {
+  font-size: 3.3rem;
+  }
+
+  .text div {
+  font-size: 1rem;
+  max-width: 32rem;
+  }
+  .xmas-image-container {
+  max-width: 16rem;
+  }
+  .date-format {
+  height: 6.5rem;
+  width: 5.5rem;
+  }
+}
+
+@media screen and (max-width:1270px) {
+  .text h1 {
+  font-size: 3rem;
+  }
+
+  .text div {
+  font-size: 0.9rem;
+  max-width: 29rem;
+  }
+
+  .xmas-image-container {
+  max-width: 15rem;
+  }
+  .date-format {
+  height: 6rem;
+  width: 5rem;
+  }
+  .date-format h4 {
+  font-size: 2.2rem;  
+  }
 }
