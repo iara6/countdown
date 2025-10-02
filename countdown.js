@@ -2,23 +2,20 @@ const dateSection = document.querySelector('.date-section');
 const dateItems = document.querySelectorAll('.date-format h4');
 
 let tempDate = new Date();
+
 let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
 let futureDate = new Date(tempYear, tempMonth, tempDay + 23, 23, 30, 0);
 
-console.log(futureDate); 
-/* Sat Oct 11 2025 11:30:00 GMT+0300 (Москва, стандартное время) */
-
 const futureTime = futureDate.getTime();
-console.log(futureTime);
 
 function getRemainingTime() {
   const today = new Date().getTime();
   const remainingTime = futureTime - today;
-  console.log(remainingTime);
- /*  1s = 1000ms
+  
+  /* 1s = 1000ms
      1m = 60s
      1hr = 60min
      1d = 24hr   */
@@ -37,11 +34,9 @@ function getRemainingTime() {
   
   const values = [days, hours, minutes, seconds];
 
-  function format(item) {
-    if (item < 10) {
-      return item = `0${item}`
-    }
-    return item;
+  /* add zero to number < 10  */
+  function format(number) {
+    return number < 10 ? `0${number}` : number;
   }
 
   dateItems.forEach((item, index) => {
